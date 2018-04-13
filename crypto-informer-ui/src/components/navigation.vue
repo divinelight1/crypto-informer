@@ -9,10 +9,8 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="">All Currency</a>
-        <a class="mdl-navigation__link" href="">BTC</a>
-        <a class="mdl-navigation__link" href="">ETH</a>
-        <a class="mdl-navigation__link" href="">IOT</a>
+        <router-link to="/allcurrencies">All Currencies</router-link>
+        <router-link to="/eth">ETH</router-link>
       </nav>
     </div>
   </header>
@@ -45,5 +43,10 @@ export default {
 </script>
 
 <style scoped>
-
+nav.mdl-navigation.mdl-layout--large-screen-only a {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 30px;
+    color: #ffffffab;
+}
 </style>
